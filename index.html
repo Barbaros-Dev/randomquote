@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Random Quote Machine</title>
+        <link rel="stylesheet" href="index.css" />
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="quote-box" class="card">
+            <label id="text"><ion-icon name="quote" style="font-size: 33px;"></ion-icon></label>
+            <label id="author">-</label>
+            <div class="buttons">
+                <a onclick="share()" id="tweet-quote" class="button">
+                    <ion-icon style="font-size: 18px;" name="logo-twitter"></ion-icon>
+                </a>
+                <button onclick="newQuote()" id="new-quote" class="button">New Quote</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito:wght@700&display=swap');
+
+:root {
+    --primary-color: #333;
+    --font-family: "Montserrat";
+    --transition-time: 1.2s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    transition: background-color var(--transition-time);
+}
+
+.card {
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#text {
+    font-size: 25px;
+    max-width: 500px;
+    padding: 20px 20px 0px 20px;
+    color: var(--primary-color);
+    transition: color var(--transition-time);
+}
+
+#author {
+    margin-left: auto;
+    padding: 20px;
+    padding-right: 0;
+    color: var(--primary-color);
+    transition: color var(--transition-time);
+}
+
+.buttons {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-top: 10px;
+}
+
+.button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    outline: none;
+    font-family: var(--font-family);
+    transition: background-color var(--transition-time);
+}
+
+.button:hover {
+    filter: brightness(120%);
+}
+
+#new-quote {
+    margin-left: auto;
+}
